@@ -28,8 +28,8 @@ cities1['location_name'] = cities1['location_name'].replace({
 })
 
 # Pivot table for better data organization
-#data = cities1.pivot_table(index=['location_name', 'datetimeLocal', 'timezone', 'latitude', 'longitude'],
-                          # columns='parameter', values='value').reset_index()
+data = cities1.pivot_table(index=['location_name', 'datetimeLocal', 'timezone', 'latitude', 'longitude'],
+                           columns='parameter', values='value').reset_index()
 
 # Handling missing values
 data.fillna({
@@ -47,15 +47,15 @@ data.fillna({
 
 # Calculating average AQI
 data["Average"] = ((data['co'] + data['no'] + data['no2'] + data['o3'] + data['pm1'] + data['pm25'] +
-                   data['temperature'] + data['so2'] + data['pm10']) / 9)
+                   data['temperature'] + data['so2'] + data['pm10']) / 9) * 7
 
 # Defining AQI levels
 def average_aqi(x):
-    if x <= 50:
+    if x <= 100:
         return "GOOD"
-    elif x <= 100:
+    elif x <= 200:
         return "MODERATE"
-    elif x <= 150:
+    elif x <= 300:
         return "POOR"
     else:
         return "SEVERE"
