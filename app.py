@@ -25,7 +25,7 @@ with col1:
     st.text("ATMOSPHERIC AIR")
     co = st.number_input('CO (µg/m³)', min_value=0, max_value=1000, step=1, value=500)
     no = st.number_input('NO (ppm)', min_value=0.0, max_value=1.0, step=0.01, value=0.07)
-    no2 = st.number_input('NO2 (µg/m³)', min_value=0.0001, max_value=200, step=0.0001, value=0.0000)
+    no2 = st.number_input('NO2 (µg/m³)', min_value=0, max_value=200, step=1, value=0)
     
 
 with col2:
