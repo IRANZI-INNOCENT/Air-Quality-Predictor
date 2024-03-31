@@ -54,7 +54,7 @@ input1.update({
 })
 
 # Path to the pre-trained model file
-model_path = "C:\\ML PROJECT\\DSA App\\Aqi_predict_model.pkl"
+model_path = "Aqi_predict_model.pkl"
 
 # Display Predict AQI button
 if st.button("Predict AQI"):
