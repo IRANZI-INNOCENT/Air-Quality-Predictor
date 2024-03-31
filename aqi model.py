@@ -53,9 +53,9 @@ data["Average"] = ((data['co'] + data['no'] + data['no2'] + data['o3'] + data['p
 def average_aqi(x):
     if x <= 100:
         return "GOOD"
-    elif x <= 200:
-        return "MODERATE"
     elif x <= 300:
+        return "MODERATE"
+    elif x <= 400:
         return "POOR"
     else:
         return "SEVERE"
