@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from aqi_predict import predict_input
 
-st.title('AQI PREDICTION MODEL')
+st.title('AIR QUALITY INDEX PREDICTION')
 st.markdown('Predict the Air Quality Index (AQI) with accuracy. Set your input parameters below.')
 
 # Input fields
@@ -16,7 +16,7 @@ input1 = {'co':'500',
           'so2':'30',
           'temperature':'27'}
 
-st.header("AIR QUALITY PARAMETERS")
+st.header("AIR QUALITY PREDICTORS")
 
 # Create input fields with 3 columns
 col1, col2, col3 = st.columns(3)
@@ -67,4 +67,4 @@ if st.button("Predict AQI"):
 
 st.text('')
 st.text('')
-st.markdown('Developed By: IRANZI INNOCENT vs MARGRET AMONDI | ` Code:` [GitHub](https://github.com/IRANZI-INNOCENT/Data-Sciennce)')
+st.markdown('Developed By: IRANZI INNOCENT | ` Code:` [GitHub](https://github.com/IRANZI-INNOCENT/Data-Sciennce)')
