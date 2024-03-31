@@ -47,7 +47,7 @@ data.fillna({
 
 # Calculating average AQI
 data["Average"] = ((data['co'] + data['no'] + data['no2'] + data['o3'] + data['pm1'] + data['pm25'] +
-                   data['temperature'] + data['so2'] + data['pm10']) / 9) * 7
+                   data['temperature'] + data['so2'] + data['pm10']) / 9)
 
 # Defining AQI levels
 def average_aqi(x):
