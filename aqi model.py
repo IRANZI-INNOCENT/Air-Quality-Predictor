@@ -28,8 +28,8 @@ cities1['location_name'] = cities1['location_name'].replace({
 })
 
 # Pivot table for better data organization
-data = cities1.pivot_table(index=['location_name', 'datetimeLocal', 'timezone', 'latitude', 'longitude'],
-                           columns='parameter', values='value').reset_index()
+#data = cities1.pivot_table(index=['location_name', 'datetimeLocal', 'timezone', 'latitude', 'longitude'],
+                          # columns='parameter', values='value').reset_index()
 
 # Handling missing values
 data.fillna({
