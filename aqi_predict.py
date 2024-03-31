@@ -31,7 +31,7 @@ if __name__ == "__main__":
               'temperature':'10'}
 
     # Path to the pre-trained model file
-    model_path = "C:\\ML PROJECT\\DSA App\\Aqi_predict_model.pkl"
+    model_path = "Aqi_predict_model.pkl"
 
     # Call the predict_input function with both arguments
     pred, prob_percentage = predict_input(model_path, input1)
