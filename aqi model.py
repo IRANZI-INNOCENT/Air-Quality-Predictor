@@ -51,11 +51,11 @@ data["Average"] = ((data['co'] + data['no'] + data['no2'] + data['o3'] + data['p
 
 # Defining AQI levels
 def average_aqi(x):
-    if x <= 100:
+    if x <= 50:
         return "GOOD"
-    elif x <= 300:
+    elif x <= 100:
         return "MODERATE"
-    elif x <= 400:
+    elif x <= 150:
         return "POOR"
     else:
         return "SEVERE"
