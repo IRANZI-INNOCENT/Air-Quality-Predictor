@@ -23,22 +23,22 @@ col1, col2, col3 = st.columns(3)
 
 with col1:
     st.text("ATMOSPHERIC AIR")
-    co = st.number_input('CO (µg/m³)', min_value=0, max_value=1000, step=1, value=500)
+    co = st.number_input('CO (µg/m³)', min_value=0, max_value=1000, step=1, value=0)
     no = st.number_input('NO (ppm)', min_value=0.0, max_value=1.0, step=0.01, value=0.07)
-    no2 = st.number_input('NO2 (µg/m³)', min_value=0, max_value=200, step=1, value=80)
+    no2 = st.number_input('NO2 (µg/m³)', min_value=0, max_value=200, step=1, value=0)
     
 
 with col2:
     st.text("PARTICULATE MATTERS")
-    pm1 = st.number_input('PM1 (µg/m³)', min_value=0, max_value=1000, step=1, value=100)
-    pm10 = st.number_input('PM10 (µg/m³)', min_value=0, max_value=1000, step=1, value=170)
+    pm1 = st.number_input('PM1 (µg/m³)', min_value=0, max_value=1000, step=1, value=10)
+    pm10 = st.number_input('PM10 (µg/m³)', min_value=0, max_value=1000, step=1, value=100)
     pm25 = st.number_input('PM2.5 (µg/m³)', min_value=0, max_value=1000, step=1, value=500)
 
 with col3:
     st.text("OTHER PARAMETERS")
     so2 = st.number_input('SO2 (µg/m³)', min_value=0, max_value=100, step=1, value=30)
-    temperature = st.number_input('Temperature (°C)', min_value=-20, max_value=50, step=1, value=27)
-    o3 = st.number_input('O3 (µg/m³)', min_value=0, max_value=200, step=1, value=160)
+    temperature = st.number_input('Temperature (°C)', min_value=-20, max_value=50, step=1, value=10)
+    o3 = st.number_input('O3 (µg/m³)', min_value=0, max_value=200, step=1, value=60)
 
 # Update input data with user inputs
 input1.update({
