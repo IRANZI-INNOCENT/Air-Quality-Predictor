@@ -67,4 +67,4 @@ if st.button("Predict AQI"):
 
 st.text('')
 st.text('')
-st.markdown('Developed By: IRANZI INNOCENT vs MARGRET AMONDI | ` Code:` [GitHub](https://github.com/IRANZI-INNOCENT/Data-Sciennce)')
+st.markdown('Developed By: IRANZI INNOCENT | ` Code:` [GitHub](https://github.com/IRANZI-INNOCENT/Data-Sciennce)')
