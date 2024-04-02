@@ -2,7 +2,7 @@ import streamlit as st
 import pandas as pd
 from aqi_predict import predict_input
 
-st.title('AQI PREDICTION MODEL')
+st.title('AQI PREDICTION SYSTEM')
 st.markdown('Predict the Air Quality Index (AQI) with accuracy. Set your input parameters below.')
 
 # Input fields
